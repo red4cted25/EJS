@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Including EJS head -->
+    <%- include("../partials/head"); %>
+    <title>EJS Home</title>
+</head>
+<body className="container">
+    <header>
+        <!-- Including EJS header -->
+        <%- include("../partials/header", {variant: 'compact'}); %>
+    </header>
+    <main>
+        <div className="jumbotron"></div>
+    </main>
+</body>
+</html>
