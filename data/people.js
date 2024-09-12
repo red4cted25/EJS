@@ -1,4 +1,4 @@
-[{"id":1,"first_name":"Isaiah","last_name":"Tyers","email":"ityers0@google.com.br","gender":"Bigender","dob":"7/15/2015"},
+let peopleData=[{"id":1,"first_name":"Isaiah","last_name":"Tyers","email":"ityers0@google.com.br","gender":"Bigender","dob":"7/15/2015"},
     {"id":2,"first_name":"Leann","last_name":"Santhouse","email":"lsanthouse1@360.cn","gender":"Female","dob":"9/23/2008"},
     {"id":3,"first_name":"Vanya","last_name":"Bethel","email":"vbethel2@ted.com","gender":"Female","dob":"5/28/2017"},
     {"id":4,"first_name":"Derek","last_name":"Poznanski","email":"dpoznanski3@delicious.com","gender":"Male","dob":"1/29/2005"},

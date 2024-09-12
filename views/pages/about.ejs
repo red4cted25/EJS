@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('../partials/head') %>
+    <title>EJS About</title>
+</head>
+<body className="container">
+    <header>
+        <!-- Including EJS header -->
+        <%- include("../partials/header", {variant: 'compact'}); %>
+    </header>
+    <main>
+        <h1>About</h1>
+        <p>We were founded with a simple mission: Being the best. We are dedicated to providing exceptional service and innovative solutions to our clients.</p>
+
+        <h2>Our Story</h2>
+        <p>Founded in 2001, our company started as a small team with a big vision. Over the years, we've grown into a leading name in the industry, but our core values remain the same.</p>
+
+        <h2>Meet the Leaders</h2>
+        <%
+            const maxRand = people.length - 2;
+            let randNum = Math.floor(Math.random() * maxRand);
+            const peopleList = people.slice(randNum, randNum + 2);
+        %>
+        <ul>
+            <% peopleList.forEach(function(person) { %>
+                <li>
+                    <strong><%= person.first_name + " " + person.last_name %></strong><br>
+                    <em>Email</em>: <%= person.email %> <br>
+                    <em>Gender</em>: <%= person.gender %> <br>
+                    <em>DOB:</em>: <%= person.dob %>
+                </li>
+            <% }); %>
+        </ul>
+    </main>
+    <footer>
+        <%- include("../partials/footer"); %>
+    </footer>
+</body>
+</html>
